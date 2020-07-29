@@ -24,7 +24,7 @@ ImageNet needs to be manually downloaded (preferably to a SSD) following the ins
 
 ## Training Method
 
-Curriculum search on CIFAR-10 dataset:
+Curriculum search on CIFAR-10
 
 ```
 python search.py -o outputs/search
@@ -58,7 +58,7 @@ CNAS = Genotype.from_arch(
 
 2. Evaluate the searched architecture on CIFAR-10 and ImageNet dataset using the following scripts.
 
-evalute on CIFAR-10:
+Evaluation on CIFAR-10:
 ```
 CUDA_VISIBLE_DEVICES=0,1 python -m torch.distributed.launch \
 --nproc_per_node=2 --master_port=23333 \
@@ -68,7 +68,7 @@ eval_arch.py \
 -o outputs/cifar10
 ```
 
-evaluate on ImageNet:
+Evaluation on ImageNet:
 ```
 CUDA_VISIBLE_DEVICES=0,1,2,3 python -m torch.distributed.launch \
 --nproc_per_node=4 --master_port=22333 \
@@ -82,7 +82,7 @@ eval_arch.py \
 
 ## Pretrained models
 
-We have release our CNAS ImageNet pretrained model (top-1 accuracy 75.4%, top-5 accuracy 92.6%) on [here](https://github.com/guoyongcs/CNAS/releases/tag/models).
+We have released our CNAS ImageNet pretrained model (top-1 accuracy 75.4%, top-5 accuracy 92.6%) on [here](https://github.com/guoyongcs/CNAS/releases/tag/models).
 
 You can use the following codes to load the ptrained models:
 
@@ -93,7 +93,7 @@ model = cnas_imagenet(pretrained=True)
 
 ## Citation
 
-If you use any part of this code in your research, please cite our paper:
+If you use any part of our code in your research, please cite our paper:
 
 ```
 @InProceedings{guo2020breaking,
