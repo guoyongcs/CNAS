@@ -15,13 +15,13 @@ parser.add_argument('--eval_size', type=int, default=224,
 # common setting
 parser.add_argument('--max_epochs', type=int, default=600,
                     help='num of training epochs')
-parser.add_argument('--batch_size', type=int, default=96,
+parser.add_argument('--batch_size', type=int, default=64,
                     help='batch size')
 
 parser.add_argument('--label_smooth', action='store_true', default=False,
                     help='label_smooth')
 # optimizer
-parser.add_argument('--learning_rate', type=float, default=0.025,
+parser.add_argument('--learning_rate', type=float, default=0.05,
                     help='init learning rate')
 parser.add_argument('--momentum', type=float, default=0.9,
                     help='momentum')
@@ -29,11 +29,11 @@ parser.add_argument('--weight_decay', type=float, default=3e-4,
                     help='weight decay')
 parser.add_argument('--grad_clip', type=float, default=5,
                     help='gradient clipping')
-parser.add_argument('--scheduler', type=str, default='naive_cosine',
+parser.add_argument('--scheduler', type=str, default='cosine',
                     help='type of LR scheduler')
 parser.add_argument('--learning_rate_min', type=float, default=0.001,
                     help='min learning rate')
-parser.add_argument('--warmup_epochs', type=int, default=5,
+parser.add_argument('--warmup_epochs', type=int, default=0,
                     help='number of epochs for warmup')
 parser.add_argument('--no_bias_decay', action='store_true', default=False,
                     help='no bias decay')
@@ -49,11 +49,11 @@ parser.add_argument('--auxiliary_weight', type=float, default=0.4,
 parser.add_argument('--drop_path_prob', type=float, default=0.2,
                     help='drop path probability')
 # others
-parser.add_argument('--seed', type=int, default=0,
+parser.add_argument('--seed', type=int, default=2020,
                     help='random seed')
 parser.add_argument('--resume', type=str, default=None,
                     help='the path to checkpoint')
-parser.add_argument('--num_workers', type=int, default=2,
+parser.add_argument('--num_workers', type=int, default=4,
                     help='num_workers')
 parser.add_argument('--report_freq', type=float, default=50,
                     help='report frequency')

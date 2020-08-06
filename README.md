@@ -63,7 +63,6 @@ Evaluation on CIFAR-10:
 CUDA_VISIBLE_DEVICES=0,1 python -m torch.distributed.launch \
 --nproc_per_node=2 --master_port=23333 \
 eval_arch.py \
---batch_size 48 --no_bias_decay --num_workers 4 \
 --arch CNAS --init_channels 36 --layers 20 \
 -o outputs/cifar10
 ```
