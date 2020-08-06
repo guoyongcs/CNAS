@@ -2,7 +2,7 @@ import argparse
 
 
 parser = argparse.ArgumentParser("Curriculum Neural Architecture Search.")
-parser.add_argument('--mode', type=str, default='CNAS_NODE',
+parser.add_argument('--mode', type=str, default='CNAS_OP',
                     help='variants of CNAS ["CNAS_NODE", "CNAS_OP", "CNAS_FIX"]')
 parser.add_argument('--search_space', type=str, default='DARTS_SPACE',
                     help='type of search space')
@@ -47,9 +47,9 @@ parser.add_argument('--n_nodes', type=int, default=4,
                     help='num of nodes in cell architectures')
 parser.add_argument('--n_ops', type=int, default=8,
                     help='num of operations in cell architectures')
-parser.add_argument('--init_channels', type=int, default=36,
+parser.add_argument('--init_channels', type=int, default=16,
                     help='num of init channels')
-parser.add_argument('--layers', type=int, default=20,
+parser.add_argument('--layers', type=int, default=8,
                     help='total number of layers')
 parser.add_argument('--multiplier', type=float, default=4,
                     help='multiplier in cell architectures')
