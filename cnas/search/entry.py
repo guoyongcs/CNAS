@@ -208,11 +208,11 @@ def conduct_pipeline(mode, n_stages, epochs_for_warmup, epoch_per_stage,
                                 data_loader=test_loader, device=device,
                                 master_pair=master, architecture=architecture,
                                 force_uniform=False, writer=writer)
-            if mode == "CNAS_NODE":
-                master.inc_n_nodes()
-            elif mode == "CNAS_OP":
-                master.inc_n_ops()
-            elif mode == "CNAS_FIX":
-                pass
-            else:
-                raise ValueError()
+        if mode == "CNAS_NODE":
+            master.inc_n_nodes()
+        elif mode == "CNAS_OP":
+            master.inc_n_ops()
+        elif mode == "CNAS_FIX":
+            pass
+        else:
+            raise ValueError()
