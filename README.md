@@ -1,6 +1,6 @@
 # Curriculum Neural Architecture Search with Progressively Growing Search Space
 
-Pytorch implementation for "Curriculum Neural Architecture Search with Progressively Growing Search Space".
+Pytorch implementation for "[Curriculum Neural Architecture Search with Progressively Growing Search Space](https://proceedings.icml.cc/static/paper_files/icml/2020/248-Paper.pdf)".
 
 <p align="center">
 <img src="assets/cnas.jpg" alt="Curriculum Neural Architecture Search" width="90%" align=center />
