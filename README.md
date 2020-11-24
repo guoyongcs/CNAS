@@ -1,6 +1,6 @@
-# Curriculum Neural Architecture Search with Progressively Growing Search Space
+# Breaking the Curse of Space Explosion: Towards Effcient NAS with Curriculum Search
 
-Pytorch implementation for "[Curriculum Neural Architecture Search with Progressively Growing Search Space](https://proceedings.icml.cc/static/paper_files/icml/2020/248-Paper.pdf)".
+Pytorch implementation for "[Breaking the Curse of Space Explosion: Towards Effcient NAS with Curriculum Search](https://proceedings.icml.cc/paper/2020/hash/621bf66ddb7c962aa0d22ac97d69b793-Abstract.html)".
 
 <p align="center">
 <img src="assets/cnas.jpg" alt="Curriculum Neural Architecture Search" width="90%" align=center />
