@@ -1,6 +1,6 @@
 # Breaking the Curse of Space Explosion: Towards Effcient NAS with Curriculum Search
 
-Pytorch implementation for "[Breaking the Curse of Space Explosion: Towards Effcient NAS with Curriculum Search](https://proceedings.icml.cc/paper/2020/hash/621bf66ddb7c962aa0d22ac97d69b793-Abstract.html)".
+Pytorch implementation for "[Breaking the Curse of Space Explosion: Towards Effcient NAS with Curriculum Search](http://proceedings.mlr.press/v119/guo20b.html)".
 
 <p align="center">
 <img src="assets/cnas.jpg" alt="Curriculum Neural Architecture Search" width="90%" align=center />
