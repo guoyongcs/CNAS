@@ -99,6 +99,7 @@ If you use any part of our code in your research, please cite our paper:
   title = {Breaking the Curse of Space Explosion: Towards Efficient NAS with Curriculum Search},
   author = {Guo, Yong and Chen, Yaofo and Zheng, Yin and Zhao, Peilin and Chen, Jian and Huang, Junzhou and Tan, Mingkui},
   booktitle = {Proceedings of the 37th International Conference on Machine Learning},
-  year = {2020}
+  year = {2020},
+  pages = {3822--3831}
 }
 ```
