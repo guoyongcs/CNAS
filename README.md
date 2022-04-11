@@ -1,9 +1,14 @@
-# Breaking the Curse of Space Explosion: Towards Effcient NAS with Curriculum Search
+# [ICML 2020] Breaking the Curse of Space Explosion: Towards Effcient NAS with Curriculum Search [[PDF](http://proceedings.mlr.press/v119/guo20b.html)]
 
-Pytorch implementation for "[Breaking the Curse of Space Explosion: Towards Effcient NAS with Curriculum Search](http://proceedings.mlr.press/v119/guo20b.html)".
+![](https://img.shields.io/badge/-PyTorch%20Implementation-blue.svg?logo=pytorch)
+![](https://img.shields.io/badge/license-BSD%203%20Clause-blue.svg)
+
+## Introduction
+
+Neural architecture search (NAS) has become an important approach to automatically find effective architectures. To cover all possible good architectures, we need to search in an extremely large search space with billions of candidate architectures. More critically, given a large search space, we may face a very challenging issue of space explosion. However, due to the limitation of computational resources, we can only sample a very small proportion of the architectures, which provides insufficient information for the training. As a result, existing methods may often produce sub-optimal architectures. To alleviate this issue, we propose a curriculum search method that starts from a small search space and gradually incorporates the learned knowledge to guide the search in a large space. With the proposed search strategy, our Curriculum Neural Architecture Search (CNAS) method significantly improves the search efficiency and finds better architectures than existing NAS methods. Extensive experiments on CIFAR-10 and ImageNet demonstrate the effectiveness of the proposed method.
 
 <p align="center">
-<img src="assets/cnas.jpg" alt="Curriculum Neural Architecture Search" width="90%" align=center />
+<img src="assets/cnas.jpg" alt="Curriculum Neural Architecture Search" width="65%" align=center />
 </p>
 
 ## Requirements
