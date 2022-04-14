@@ -88,7 +88,7 @@ eval_arch.py \
 
 We have released our CNAS ImageNet pretrained model (top-1 accuracy 75.4%, top-5 accuracy 92.6%) on [here](https://github.com/guoyongcs/CNAS/releases/tag/models).
 
-You can use the following codes to load the ptrained models:
+You can use the following codes to load the pretrained models:
 
 ```
 from cnas.model.eval import cnas_imagenet
